@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Apartment with City View - RealEstate Cambodia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/property.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-building"></i>
+                Real<span>Estate</span>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li><a href="properties.html" class="nav-item">Properties</a></li>
+                    <li><a href="index.html#about" class="nav-item">About Us</a></li>
+                    <li><a href="index.html#contact" class="nav-item">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-close" id="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li class="mobile-nav-item"><a href="index.html">Home</a></li>
+            <li class="mobile-nav-item"><a href="properties.html" class="active">Properties</a></li>
+            <li class="mobile-nav-item"><a href="index.html#about">About Us</a></li>
+            <li class="mobile-nav-item"><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-contact">
+            <div class="mobile-contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+855 23 123 456</span>
+            </div>
+            <div class="mobile-contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>info@realestate.com.kh</span>
+            </div>
+            <div class="mobile-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>123 Norodom Blvd, Phnom Penh</span>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Modern Apartment with City View</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <span class="separator">/</span>
+                <a href="properties.html">Properties</a>
+                <span class="separator">/</span>
+                <span class="current">Modern Apartment with City View</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Detail Section -->
+    <section class="property-detail-section">
+        <div class="container">
+            <div class="property-detail-container">
+                <!-- Property Gallery -->
+                <div class="property-gallery">
+                    <div class="gallery-main">
+                        <img src="/placeholder.svg?height=600&width=1200" alt="Modern Apartment" class="gallery-main-img" id="main-image">
+                    </div>
+                    <div class="gallery-thumbs">
+                        <img src="/placeholder.svg?height=120&width=200" alt="Thumbnail 1" class="gallery-thumb active" onclick="changeImage('/placeholder.svg?height=600&width=1200', 0)">
+                        <img src="/placeholder.svg?height=120&width=200&text=Living Room" alt="Thumbnail 2" class="gallery-thumb" onclick="changeImage('/placeholder.svg?height=600&width=1200&text=Living Room', 1)">
+                        <img src="/placeholder.svg?height=120&width=200&text=Kitchen" alt="Thumbnail 3" class="gallery-thumb" onclick="changeImage('/placeholder.svg?height=600&width=1200&text=Kitchen', 2)">
+                        <img src="/placeholder.svg?height=120&width=200&text=Bedroom" alt="Thumbnail 4" class="gallery-thumb" onclick="changeImage('/placeholder.svg?height=600&width=1200&text=Bedroom', 3)">
+                        <img src="/placeholder.svg?height=120&width=200&text=Bathroom" alt="Thumbnail 5" class="gallery-thumb" onclick="changeImage('/placeholder.svg?height=600&width=1200&text=Bathroom', 4)">
+                    </div>
+                    <div class="gallery-nav gallery-prev" onclick="prevImage()">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="gallery-nav gallery-next" onclick="nextImage()">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="gallery-counter">
+                        <span id="current-image">1</span> / <span id="total-images">5</span>
+                    </div>
+                    <div class="view-all-images-btn" onclick="openGalleryPopup()">
+                        <i class="fas fa-images"></i> View All Images
+                    </div>
+                </div>
+
+                <!-- Property Header -->
+                <div class="property-header">
+                    <div class="property-header-left">
+                        <h1 class="property-title">Modern Apartment with City View</h1>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> BKK1, Phnom Penh, Cambodia</p>
+                        <div class="property-tags">
+                            <span class="property-tag">For Sale</span>
+                            <span class="property-tag featured">Featured</span>
+                            <span class="property-tag">New</span>
+                        </div>
+                    </div>
+                    <div class="property-price-container">
+                        <div class="property-label">Price</div>
+                        <div class="property-price">$120,000</div>
+                    </div>
+                </div>
+
+                <!-- Property Content -->
+                <div class="property-content">
+                    <div class="property-main">
+                        <!-- Description Section -->
+                        <div class="property-section">
+                            <h2 class="property-section-title">Description</h2>
+                            <div class="property-description">
+                                <p>This stunning modern apartment offers breathtaking city views from its prime location in BKK1, one of Phnom Penh's most desirable neighborhoods. Recently renovated with high-quality materials and contemporary design, this property combines comfort, style, and convenience.</p>
+                                <p>The open-concept living area features floor-to-ceiling windows that flood the space with natural light and showcase panoramic views of the city skyline. The kitchen is equipped with premium stainless steel appliances, granite countertops, and ample storage space.</p>
+                                <p>Both bedrooms are generously sized with built-in wardrobes, and the master bedroom includes an ensuite bathroom with a rainfall shower. The apartment also features a balcony perfect for enjoying morning coffee or evening relaxation while taking in the spectacular views.</p>
+                                <p>Located in a secure building with 24-hour security, residents enjoy access to a range of amenities including a swimming pool, fitness center, and rooftop garden. The property is within walking distance to international restaurants, cafes, shopping centers, and schools.</p>
+                            </div>
+                        </div>
+
+                        <!-- Property Features -->
+                        <div class="property-section">
+                            <h2 class="property-section-title">Property Features</h2>
+                            <div class="property-features-list">
+                                <div class="property-feature-item">
+                                    <i class="fas fa-bed"></i>
+                                    <span>2 Bedrooms</span>
+                                </div>
+                                <div class="property-feature-item">
+                                    <i class="fas fa-bath"></i>
+                                    <span>2 Bathrooms</span>
+                                </div>
+                                <div class="property-feature-item">
+                                    <i class="fas fa-vector-square"></i>
+                                    <span>120 m² Living Area</span>
+                                </div>
+                                <div class="property-feature-item">
+                                    <i class="fas fa-car"></i>
+                                    <span>1 Parking Space</span>
+                                </div>
+                                <div class="property-feature-item">
+                                    <i class="fas fa-building"></i>
+                                    <span>5th Floor</span>
+                                </div>
+                                <div class="property-feature-item">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Built in 2018</span>
+                                </div>
+                                <div class="property-feature-item">
+                                    <i class="fas fa-wind"></i>
+                                    <span>Air Conditioning</span>
+                                </div>
+                                <div class="property-feature-item">
+                                    <i class="fas fa-wifi"></i>
+                                    <span>High-Speed Internet</span>
+                                </div>
+                                <div class="property-feature-item">
+                                    <i class="fas fa-swimming-pool"></i>
+                                    <span>Swimming Pool</span>
+                                </div>
+                                <div class="property-feature-item">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>Fitness Center</span>
+                                </div>
+                                <div class="property-feature-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>24/7 Security</span>
+                                </div>
+                                <div class="property-feature-item">
+                                    <i class="fas fa-elevator"></i>
+                                    <span>Elevator</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Property Details -->
+                        <div class="property-section">
+                            <h2 class="property-section-title">Property Details</h2>
+                            <div class="property-details-list">
+                                <div class="property-detail-item">
+                                    <span class="detail-label">Property ID:</span>
+                                    <span class="detail-value">AP-12345</span>
+                                </div>
+                                <div class="property-detail-item">
+                                    <span class="detail-label">Property Type:</span>
+                                    <span class="detail-value">Apartment</span>
+                                </div>
+                                <div class="property-detail-item">
+                                    <span class="detail-label">Status:</span>
+                                    <span class="detail-value">For Sale</span>
+                                </div>
+                                <div class="property-detail-item">
+                                    <span class="detail-label">Price:</span>
+                                    <span class="detail-value">$120,000</span>
+                                </div>
+                                <div class="property-detail-item">
+                                    <span class="detail-label">Area:</span>
+                                    <span class="detail-value">120 m²</span>
+                                </div>
+                                <div class="property-detail-item">
+                                    <span class="detail-label">Bedrooms:</span>
+                                    <span class="detail-value">2</span>
+                                </div>
+                                <div class="property-detail-item">
+                                    <span class="detail-label">Bathrooms:</span>
+                                    <span class="detail-value">2</span>
+                                </div>
+                                <div class="property-detail-item">
+                                    <span class="detail-label">Garage:</span>
+                                    <span class="detail-value">1</span>
+                                </div>
+                                <div class="property-detail-item">
+                                    <span class="detail-label">Year Built:</span>
+                                    <span class="detail-value">2018</span>
+                                </div>
+                                <div class="property-detail-item">
+                                    <span class="detail-label">Property Condition:</span>
+                                    <span class="detail-value">Excellent</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Virtual Tour -->
+                        <div class="property-section">
+                            <h2 class="property-section-title">Virtual Tour</h2>
+                            <div class="virtual-tour">
+                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Virtual Tour" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <!-- Property Map -->
+                        <div class="property-section">
+                            <h2 class="property-section-title">Location</h2>
+                            <div class="property-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.7714081790653!2d104.91235867586036!3d11.556531244551952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951add5e2cd81%3A0x171e0b69c7c6f7ba!2sBKK1%2C%20Phnom%20Penh!5e0!3m2!1sen!2skh!4v1683893273293!5m2!1sen!2skh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property Sidebar -->
+                    <div class="property-sidebar">
+                        <!-- Agent Info -->
+                        <div class="sidebar-section">
+                            <h3 class="sidebar-title">Property Agent</h3>
+                            <div class="agent-info">
+                                <img src="/placeholder.svg?height=200&width=200&text=Agent" alt="Agent" class="agent-img">
+                                <h4 class="agent-name">Sophia Chen</h4>
+                                <p class="agent-title">Senior Real Estate Agent</p>
+                                <div class="agent-contact">
+                                    <div class="agent-contact-item">
+                                        <i class="fas fa-phone"></i>
+                                        <span>+855 12 345 678</span>
+                                    </div>
+                                    <div class="agent-contact-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <span>sophia@realestate.com.kh</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-secondary" style="margin-top: 15px; width: 100%;">View Agent Profile</a>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <div class="sidebar-section">
+                            <h3 class="sidebar-title">Request Information</h3>
+                            <form class="contact-form">
+                                <div class="contact-form-group">
+                                    <input type="text" class="contact-form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="contact-form-group">
+                                    <input type="email" class="contact-form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="contact-form-group">
+                                    <input type="tel" class="contact-form-control" placeholder="Your Phone" required>
+                                </div>
+                                <div class="contact-form-group">
+                                    <textarea class="contact-form-control" placeholder="Your Message" rows="4" required>I'm interested in this property (AP-12345). Please contact me with more information.</textarea>
+                                </div>
+                                <button type="submit" class="contact-form-btn">Send Message</button>
+                            </form>
+                        </div>
+
+                        <!-- Property Actions -->
+                        <div class="sidebar-section">
+                            <h3 class="sidebar-title">Property Actions</h3>
+                            <div style="display: flex; flex-direction: column; gap: 10px;">
+                                <a href="#" class="btn" style="width: 100%; text-align: center;">
+                                    <i class="fas fa-calendar-alt" style="margin-right: 8px;"></i> Schedule a Viewing
+                                </a>
+                                <a href="#" class="btn btn-secondary" style="width: 100%; text-align: center;">
+                                    <i class="fas fa-download" style="margin-right: 8px;"></i> Download Brochure
+                                </a>
+                                <a href="#" class="btn btn-outline" style="width: 100%; text-align: center;">
+                                    <i class="fas fa-share-alt" style="margin-right: 8px;"></i> Share Property
+                                </a>
+                                <a href="#" class="btn btn-outline" style="width: 100%; text-align: center;">
+                                    <i class="fas fa-heart" style="margin-right: 8px;"></i> Add to Favorites
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Mortgage Calculator -->
+                        <div class="sidebar-section">
+                            <h3 class="sidebar-title">Mortgage Calculator</h3>
+                            <form class="mortgage-calculator">
+                                <div class="contact-form-group">
+                                    <label>Property Price ($)</label>
+                                    <input type="number" class="contact-form-control" value="120000" id="property-price">
+                                </div>
+                                <div class="contact-form-group">
+                                    <label>Down Payment (%)</label>
+                                    <input type="number" class="contact-form-control" value="20" id="down-payment">
+                                </div>
+                                <div class="contact-form-group">
+                                    <label>Loan Term (years)</label>
+                                    <input type="number" class="contact-form-control" value="25" id="loan-term">
+                                </div>
+                                <div class="contact-form-group">
+                                    <label>Interest Rate (%)</label>
+                                    <input type="number" class="contact-form-control" value="4.5" step="0.1" id="interest-rate">
+                                </div>
+                                <button type="button" class="contact-form-btn" onclick="calculateMortgage()">Calculate</button>
+                                <div style="margin-top: 15px; text-align: center; padding: 15px; background-color: var(--light-bg); border-radius: 4px;">
+                                    <p style="margin-bottom: 5px; font-weight: 600;">Monthly Payment:</p>
+                                    <p style="font-size: 1.5rem; color: var(--primary-gold); font-weight: 700;" id="monthly-payment">$547.20</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Similar Properties -->
+    <section class="similar-properties">
+        <div class="container">
+            <h2 class="section-title">Similar <span>Properties</span></h2>
+            <div class="property-grid">
+                <div class="property-card">
+                    <div class="property-img" style="background-image: url('/placeholder.svg?height=400&width=600');">
+                        <div class="property-card-tag">For Sale</div>
+                        <div class="property-card-price">$135,000</div>
+                    </div>
+                    <div class="property-card-content">
+                        <h3 class="property-card-title">Luxury Apartment with Balcony</h3>
+                        <p class="property-card-location"><i class="fas fa-map-marker-alt"></i> Tonle Bassac, Phnom Penh</p>
+                        <div class="property-card-features">
+                            <span class="property-card-feature"><i class="fas fa-bed"></i> 2 Beds</span>
+                            <span class="property-card-feature"><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span class="property-card-feature"><i class="fas fa-vector-square"></i> 110 m²</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <div class="property-img" style="background-image: url('/placeholder.svg?height=400&width=600');">
+                        <div class="property-card-tag">For Rent</div>
+                        <div class="property-card-price">$900/month</div>
+                    </div>
+                    <div class="property-card-content">
+                        <h3 class="property-card-title">Modern Studio in City Center</h3>
+                        <p class="property-card-location"><i class="fas fa-map-marker-alt"></i> Daun Penh, Phnom Penh</p>
+                        <div class="property-card-features">
+                            <span class="property-card-feature"><i class="fas fa-bed"></i> 1 Bed</span>
+                            <span class="property-card-feature"><i class="fas fa-bath"></i> 1 Bath</span>
+                            <span class="property-card-feature"><i class="fas fa-vector-square"></i> 65 m²</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <div class="property-img" style="background-image: url('/placeholder.svg?height=400&width=600');">
+                        <div class="property-card-tag">For Sale</div>
+                        <div class="property-card-price">$145,000</div>
+                    </div>
+                    <div class="property-card-content">
+                        <h3 class="property-card-title">Spacious Apartment with Garden View</h3>
+                        <p class="property-card-location"><i class="fas fa-map-marker-alt"></i> Toul Kork, Phnom Penh</p>
+                        <div class="property-card-features">
+                            <span class="property-card-feature"><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span class="property-card-feature"><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span class="property-card-feature"><i class="fas fa-vector-square"></i> 140 m²</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Telegram Sticky Icon -->
+    <div class="telegram-sticky">
+        <div class="telegram-btn" id="telegram-btn">
+            <i class="fab fa-telegram-plane"></i>
+        </div>
+        <div class="telegram-tooltip">Chat with us on Telegram</div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Gallery Popup -->
+    <div class="gallery-popup" id="gallery-popup">
+        <div class="popup-header">
+            <div class="popup-title">Modern Apartment with City View - Gallery</div>
+            <div class="popup-close" onclick="closeGalleryPopup()">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="popup-content">
+            <div class="popup-main-image">
+                <img src="/placeholder.svg?height=800&width=1200" alt="Property Image" id="popup-main-image">
+            </div>
+            <div class="popup-nav popup-prev" onclick="popupPrevImage()">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="popup-nav popup-next" onclick="popupNextImage()">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="popup-counter">
+                <span id="popup-current-image">1</span> / <span id="popup-total-images">5</span>
+            </div>
+        </div>
+        <div class="popup-thumbnails" id="popup-thumbnails">
+            <!-- Thumbnails will be added dynamically -->
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenu.classList.add('active');
+            mobileMenuOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        function closeMenu() {
+            mobileMenu.classList.remove('active');
+            mobileMenuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuClose.addEventListener('click', closeMenu);
+        mobileMenuOverlay.addEventListener('click', closeMenu);
+
+        // Sticky Header
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Telegram Button Click
+        const telegramBtn = document.getElementById('telegram-btn');
+        telegramBtn.addEventListener('click', function() {
+            window.open('https://t.me/realestatecambodia', '_blank');
+        });
+
+        // Image Gallery
+        const images = [
+            '/placeholder.svg?height=600&width=1200',
+            '/placeholder.svg?height=600&width=1200&text=Living Room',
+            '/placeholder.svg?height=600&width=1200&text=Kitchen',
+            '/placeholder.svg?height=600&width=1200&text=Bedroom',
+            '/placeholder.svg?height=600&width=1200&text=Bathroom'
+        ];
+        let currentImageIndex = 0;
+        const mainImage = document.getElementById('main-image');
+        const currentImageEl = document.getElementById('current-image');
+        const totalImagesEl = document.getElementById('total-images');
+        const thumbs = document.querySelectorAll('.gallery-thumb');
+
+        totalImagesEl.textContent = images.length;
+
+        function changeImage(src, index) {
+            mainImage.src = src;
+            currentImageIndex = index;
+            currentImageEl.textContent = index + 1;
+            
+            // Update active thumbnail
+            thumbs.forEach((thumb, i) => {
+                if (i === index) {
+                    thumb.classList.add('active');
+                } else {
+                    thumb.classList.remove('active');
+                }
+            });
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            changeImage(images[currentImageIndex], currentImageIndex);
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            changeImage(images[currentImageIndex], currentImageIndex);
+        }
+
+        // Mortgage Calculator
+        function calculateMortgage() {
+            const price = parseFloat(document.getElementById('property-price').value);
+            const downPaymentPercent = parseFloat(document.getElementById('down-payment').value);
+            const loanTerm = parseFloat(document.getElementById('loan-term').value);
+            const interestRate = parseFloat(document.getElementById('interest-rate').value);
+            
+            const downPayment = price * (downPaymentPercent / 100);
+            const loanAmount = price - downPayment;
+            const monthlyInterest = interestRate / 100 / 12;
+            const numberOfPayments = loanTerm * 12;
+            
+            const monthlyPayment = loanAmount * monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments) / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1);
+            
+            document.getElementById('monthly-payment').textContent = '$' + monthlyPayment.toFixed(2);
+        }
+
+        // Animation on Scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.property-card');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 100) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Initialize animations
+        window.addEventListener('load', function() {
+            document.querySelectorAll('.property-card').forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+            
+            animateOnScroll();
+        });
+
+        window.addEventListener('scroll', animateOnScroll);
+
+        // Gallery Popup Functions
+        function openGalleryPopup() {
+            const galleryPopup = document.getElementById('gallery-popup');
+            const popupMainImage = document.getElementById('popup-main-image');
+            const popupCurrentImage = document.getElementById('popup-current-image');
+            const popupTotalImages = document.getElementById('popup-total-images');
+            const popupThumbnails = document.getElementById('popup-thumbnails');
+            
+            // Set the main image
+            popupMainImage.src = images[currentImageIndex];
+            
+            // Update counter
+            popupCurrentImage.textContent = currentImageIndex + 1;
+            popupTotalImages.textContent = images.length;
+            
+            // Generate thumbnails
+            popupThumbnails.innerHTML = '';
+            images.forEach((image, index) => {
+                const thumb = document.createElement('img');
+                thumb.src = image.replace('height=600&width=1200', 'height=120&width=200');
+                thumb.alt = `Thumbnail ${index + 1}`;
+                thumb.className = 'popup-thumb';
+                if (index === currentImageIndex) {
+                    thumb.classList.add('active');
+                }
+                thumb.onclick = () => popupChangeImage(image, index);
+                popupThumbnails.appendChild(thumb);
+            });
+            
+            // Show popup
+            galleryPopup.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            
+            // Add keyboard navigation
+            document.addEventListener('keydown', handlePopupKeydown);
+        }
+
+        function closeGalleryPopup() {
+            const galleryPopup = document.getElementById('gallery-popup');
+            galleryPopup.classList.remove('active');
+            document.body.style.overflow = '';
+            
+            // Remove keyboard navigation
+            document.removeEventListener('keydown', handlePopupKeydown);
+        }
+
+        function popupChangeImage(src, index) {
+            const popupMainImage = document.getElementById('popup-main-image');
+            const popupCurrentImage = document.getElementById('popup-current-image');
+            const popupThumbs = document.querySelectorAll('.popup-thumb');
+            
+            popupMainImage.src = src;
+            popupCurrentImage.textContent = index + 1;
+            
+            // Update active thumbnail
+            popupThumbs.forEach((thumb, i) => {
+                if (i === index) {
+                    thumb.classList.add('active');
+                } else {
+                    thumb.classList.remove('active');
+                }
+            });
+            
+            currentImageIndex = index;
+        }
+
+        function popupNextImage() {
+            const nextIndex = (currentImageIndex + 1) % images.length;
+            popupChangeImage(images[nextIndex], nextIndex);
+        }
+
+        function popupPrevImage() {
+            const prevIndex = (currentImageIndex - 1 + images.length) % images.length;
+            popupChangeImage(images[prevIndex], prevIndex);
+        }
+
+        function handlePopupKeydown(e) {
+            if (e.key === 'Escape') {
+                closeGalleryPopup();
+            } else if (e.key === 'ArrowRight') {
+                popupNextImage();
+            } else if (e.key === 'ArrowLeft') {
+                popupPrevImage();
+            }
+        }
+
+        // Close popup when clicking outside the content
+        document.addEventListener('click', function(e) {
+            const galleryPopup = document.getElementById('gallery-popup');
+            const popupContent = document.querySelector('.popup-content');
+            
+            if (galleryPopup.classList.contains('active') && 
+                e.target !== popupContent && 
+                !popupContent.contains(e.target) &&
+                !e.target.closest('.popup-thumbnails') &&
+                !e.target.closest('.popup-header') &&
+                !e.target.closest('.popup-nav')) {
+                closeGalleryPopup();
+            }
+        });
+    </script>
+</body>
+</html>
