@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Properties - RealEstate Cambodia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/property-style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container header-container">
+        <div class="logo">
+          <i class="fas fa-building"></i>
+          Real<span>Estate</span>
+        </div>
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-item">Home</a></li>
+            <li><a href="properties.html" class="nav-item">Properties</a></li>
+            <li><a href="index.html#about" class="nav-item">About Us</a></li>
+            <li><a href="index.html#contact" class="nav-item">Contact</a></li>
+          </ul>
+          <div class="mobile-menu-btn" id="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-close" id="mobile-menu-close">
+        <i class="fas fa-times"></i>
+      </div>
+      <ul>
+        <li class="mobile-nav-item"><a href="index.html">Home</a></li>
+        <li class="mobile-nav-item">
+          <a href="properties.html" class="active">Properties</a>
+        </li>
+        <li class="mobile-nav-item"><a href="index.html#about">About Us</a></li>
+        <li class="mobile-nav-item">
+          <a href="index.html#contact">Contact</a>
+        </li>
+      </ul>
+      <div class="mobile-contact">
+        <div class="mobile-contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+855 23 123 456</span>
+        </div>
+        <div class="mobile-contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>info@realestate.com.kh</span>
+        </div>
+        <div class="mobile-contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>123 Norodom Blvd, Phnom Penh</span>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">All Properties</h1>
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a>
+          <span class="separator">/</span>
+          <span class="current">Properties</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Section -->
+    <div class="container">
+      <div class="filter-section">
+        <form class="filter-form">
+          <select class="filter-input">
+            <option>All Locations</option>
+            <option>Phnom Penh</option>
+            <option>Siem Reap</option>
+            <option>Sihanoukville</option>
+            <option>Battambang</option>
+          </select>
+          <select class="filter-input">
+            <option>Property Type</option>
+            <option>Apartment</option>
+            <option>Villa</option>
+            <option>House</option>
+            <option>Land</option>
+            <option>Commercial</option>
+          </select>
+          <select class="filter-input">
+            <option>Price Range</option>
+            <option>$0 - $50,000</option>
+            <option>$50,000 - $100,000</option>
+            <option>$100,000 - $200,000</option>
+            <option>$200,000+</option>
+          </select>
+          <select class="filter-input">
+            <option>Bedrooms</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4+</option>
+          </select>
+          <button class="filter-btn">Filter Results</button>
+        </form>
+      </div>
+
+      <!-- Properties Grid -->
+      <div class="properties-grid">
+        <!-- Property 1 -->
+        <div class="property-card">
+          <div class="property-img">
+            <img src="images/modernApartment.webp" alt="Spacious Villa" />
+            <div class="property-tag">For Sale</div>
+            <div class="property-price">$120,000</div>
+          </div>
+          <div class="property-content">
+            <h3 class="property-title">Modern Apartment with City View</h3>
+            <p class="property-location">
+              <i class="fas fa-map-marker-alt"></i> BKK1, Phnom Penh
+            </p>
+            <div class="property-features">
+              <span class="property-feature"
+                ><i class="fas fa-bed"></i> 2 Beds</span
+              >
+              <span class="property-feature"
+                ><i class="fas fa-bath"></i> 2 Baths</span
+              >
+              <span class="property-feature"
+                ><i class="fas fa-vector-square"></i> 120 m²</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 2 -->
+        <div class="property-card">
+          <div class="property-img">
+            <img src="images/LuxuryCondo.jpg" alt="Luxury Condo" />
+            <div class="property-tag">For Rent</div>
+            <div class="property-price">$800/month</div>
+          </div>
+          <div class="property-content">
+            <h3 class="property-title">Luxury Condo with Pool Access</h3>
+            <p class="property-location">
+              <i class="fas fa-map-marker-alt"></i> Tonle Bassac, Phnom Penh
+            </p>
+            <div class="property-features">
+              <span class="property-feature"
+                ><i class="fas fa-bed"></i> 1 Bed</span
+              >
+              <span class="property-feature"
+                ><i class="fas fa-bath"></i> 1 Bath</span
+              >
+              <span class="property-feature"
+                ><i class="fas fa-vector-square"></i> 75 m²</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 3 -->
+        <div class="property-card">
+          <div class="property-img">
+            <img src="images/Spacious-Villa.jpg" alt="Spacious Villa" />
+            <div class="property-tag">For Sale</div>
+            <div class="property-price">$350,000</div>
+          </div>
+          <div class="property-content">
+            <h3 class="property-title">Spacious Villa with Garden</h3>
+            <p class="property-location">
+              <i class="fas fa-map-marker-alt"></i> Toul Kork, Phnom Penh
+            </p>
+            <div class="property-features">
+              <span class="property-feature"
+                ><i class="fas fa-bed"></i> 4 Beds</span
+              >
+              <span class="property-feature"
+                ><i class="fas fa-bath"></i> 3 Baths</span
+              >
+              <span class="property-feature"
+                ><i class="fas fa-vector-square"></i> 250 m²</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 4 -->
+        <div class="property-card">
+          <div class="property-img">
+            <img
+              src="images/elegentApartment.jpg"
+              alt="Elegant Apartment in Central Location"
+            />
+            <div class="property-tag">For Sale</div>
+            <div class="property-price">$180,000</div>
+          </div>
+          <div class="property-content">
+            <h3 class="property-title">
+              Elegant Apartment in Central Location
+            </h3>
+            <p class="property-location">
+              <i class="fas fa-map-marker-alt"></i> Daun Penh, Phnom Penh
+            </p>
+            <div class="property-features">
+              <span class="property-feature"
+                ><i class="fas fa-bed"></i> 3 Beds</span
+              >
+              <span class="property-feature"
+                ><i class="fas fa-bath"></i> 2 Baths</span
+              >
+              <span class="property-feature"
+                ><i class="fas fa-vector-square"></i> 150 m²</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 5 -->
+        <div class="property-card">
+          <div class="property-img">
+            <img
+              src="images/modernvilla.jpg"
+              alt="Modern Villa with Private Pool"
+            />
+            <div class="property-tag">For Rent</div>
+            <div class="property-price">$1,200/month</div>
+          </div>
+          <div class="property-content">
+            <h3 class="property-title">Modern Villa with Private Pool</h3>
+            <p class="property-location">
+              <i class="fas fa-map-marker-alt"></i> Siem Reap
+            </p>
+            <div class="property-features">
+              <span class="property-feature"
+                ><i class="fas fa-bed"></i> 3 Beds</span
+              >
+              <span class="property-feature"
+                ><i class="fas fa-bath"></i> 3 Baths</span
+              >
+              <span class="property-feature"
+                ><i class="fas fa-vector-square"></i> 200 m²</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 6 -->
+        <div class="property-card">
+          <div class="property-img">
+            <img
+              src="images/cozyStudioApart.jpg"
+              alt="Cozy Studio in City Center"
+            />
+            <div class="property-tag">For Sale</div>
+            <div class="property-price">$95,000</div>
+          </div>
+          <div class="property-content">
+            <h3 class="property-title">Cozy Studio in City Center</h3>
+            <p class="property-location">
+              <i class="fas fa-map-marker-alt"></i> Riverside, Phnom Penh
+            </p>
+            <div class="property-features">
+              <span class="property-feature"
+                ><i class="fas fa-bed"></i> 1 Bed</span
+              >
+              <span class="property-feature"
+                ><i class="fas fa-bath"></i> 1 Bath</span
+              >
+              <span class="property-feature"
+                ><i class="fas fa-vector-square"></i> 55 m²</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <a href="#" class="page-link active">1</a>
+        <a href="#" class="page-link">2</a>
+        <a href="#" class="page-link">3</a>
+        <a href="#" class="page-link">4</a>
+        <a href="#" class="page-link"><i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>About Us</h3>
+            <p>
+              RealEstate Cambodia is the leading property portal offering an
+              extensive database of residential and commercial properties for
+              sale and rent in Cambodia.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="index.html"
+                  ><i class="fas fa-chevron-right"></i> Home</a
+                >
+              </li>
+              <li>
+                <a href="properties.html"
+                  ><i class="fas fa-chevron-right"></i> Properties</a
+                >
+              </li>
+              <li>
+                <a href="index.html#about"
+                  ><i class="fas fa-chevron-right"></i> About Us</a
+                >
+              </li>
+              <li>
+                <a href="index.html#contact"
+                  ><i class="fas fa-chevron-right"></i> Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Property Types</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Apartments</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Villas</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Houses</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Commercial</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Norodom Blvd, Phnom
+                Penh, Cambodia
+              </li>
+              <li><i class="fas fa-phone"></i> +855 23 123 456</li>
+              <li><i class="fas fa-envelope"></i> info@realestate.com.kh</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          &copy; 2023 RealEstate Cambodia. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Telegram Sticky Icon -->
+    <div class="telegram-sticky">
+      <div class="telegram-btn" id="telegram-btn">
+        <i class="fab fa-telegram-plane"></i>
+      </div>
+      <div class="telegram-tooltip">Chat with us on Telegram</div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      // Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileMenuClose = document.getElementById("mobile-menu-close");
+      const mobileMenuOverlay = document.getElementById("mobile-menu-overlay");
+
+      mobileMenuBtn.addEventListener("click", function () {
+        mobileMenu.classList.add("active");
+        mobileMenuOverlay.classList.add("active");
+        document.body.style.overflow = "hidden";
+      });
+
+      function closeMenu() {
+        mobileMenu.classList.remove("active");
+        mobileMenuOverlay.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      mobileMenuClose.addEventListener("click", closeMenu);
+      mobileMenuOverlay.addEventListener("click", closeMenu);
+
+      // Sticky Header
+      const header = document.getElementById("header");
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 100) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // Telegram Button Click
+      const telegramBtn = document.getElementById("telegram-btn");
+      telegramBtn.addEventListener("click", function () {
+        window.open("https://t.me/realestatecambodia", "_blank");
+      });
+
+      // Animation on Scroll
+      function animateOnScroll() {
+        const elements = document.querySelectorAll(".property-card");
+
+        elements.forEach((element) => {
+          const elementPosition = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+
+          if (elementPosition < windowHeight - 100) {
+            element.style.opacity = "1";
+          }
+        });
+      }
+
+      window.addEventListener("load", animateOnScroll);
+      window.addEventListener("scroll", animateOnScroll);
+    </script>
+  </body>
+</html>
